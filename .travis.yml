@@ -25,5 +25,5 @@ deploy:
     secure: PLEASE_REPLACE_ME
   on:
     tags: true
-    repo: mohawk2/sqlalchemy_csv_normalise
+    repo: mohawk2/sqlalchemy-csv-normalise
     python: 3.8

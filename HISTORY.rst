@@ -6,3 +6,8 @@ History
 ------------------
 
 * First release on PyPI.
+
+0.1.2 (2020-02-01)
+------------------
+
+* make type_coercer only affect string values

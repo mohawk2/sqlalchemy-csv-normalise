@@ -34,7 +34,7 @@ Example::
 
 __author__ = """Ed J"""
 __email__ = 'mohawk2@users.noreply.github.com'
-__version__ = '0.1.1'
+__version__ = '0.1.2'
 
 from sqlalchemy import inspect
 import datetime

@@ -10,7 +10,10 @@ with open('README.rst') as readme_file:
 with open('HISTORY.rst') as history_file:
     history = history_file.read()
 
-requirements = [ ]
+requirements = [
+    'SQLAlchemy>=1.3.8',
+    'python-dateutil>=2.8.1',
+],
 
 setup_requirements = ['pytest-runner', ]
 
@@ -43,6 +46,6 @@ setup(
     test_suite='tests',
     tests_require=test_requirements,
     url='https://github.com/mohawk2/sqlalchemy-csv-normalise',
-    version='0.1.0',
+    version='0.1.1',
     zip_safe=False,
 )

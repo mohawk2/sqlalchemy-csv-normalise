@@ -141,6 +141,8 @@ def empty_deleter(table):
 def type_coercer(table):
     """Returns function that given a row dict will coerce values.
     Works on dates and booleans.
+    Will only operate on strings, so if you have pass in a row that has already
+    got non-string values, they will not be affected.
     """
     coerceables = {}
     for c in inspect(table).columns:
@@ -148,7 +150,8 @@ def type_coercer(table):
     def _row_coercer(d):
         c = dict(d)
         for col in c:
-            c[col] = coerceables[col](c[col])
+            if isinstance(c[col], str):
+                c[col] = coerceables[col](c[col])
         return c
     return _row_coercer
 

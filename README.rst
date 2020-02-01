@@ -79,6 +79,8 @@ Useful because CSV has no way to record NULL.
 
 Returns function that given a row dict will coerce values.
 Works on dates and booleans.
+Will only operate on strings, so if you have pass in a row that has already
+got non-string values, they will not be affected.
 
 * renormalise_prepare(session, table, colname_tidier)
 

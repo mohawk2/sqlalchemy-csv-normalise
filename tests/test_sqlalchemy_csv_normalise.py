@@ -36,7 +36,7 @@ csv_rows_delete_expect = [
     { 'username': 'noname', 'accounttype': 'user', 'age': '33', 'valid': 'False', 'nonk_id': 1 },
 ]
 csv_rows_coerce_in = [
-    { 'username': 'bob', 'name': 'Big Bob', 'accounttype_id': '1', 'age': '31', 'valid': 'True' },
+    { 'username': 'bob', 'name': 'Big Bob', 'accounttype_id': '1', 'age': '31', 'valid': True },
     { 'username': 'joe', 'name': 'Regular Joe', 'accounttype_id': '2', 'age': '32', 'valid': 'False' },
 ]
 csv_rows_coerce_expect = [
